@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$yamlContent = file_get_contents('ciao.yml');
+$yamlContent = file_get_contents('studenti.yml');
 $yamlData = Symfony\Component\Yaml\Yaml::parse($yamlContent);
 $jsonData = json_encode($yamlData, JSON_PRETTY_PRINT);
 
